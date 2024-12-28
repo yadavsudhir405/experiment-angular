@@ -1,0 +1,16 @@
+:host {
+  display: grid;
+  grid-template-rows: min-content minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'appHeader'
+                        'mainBody';
+  height: 100vh;
+}
+
+.app-header {
+  grid-area: appHeader;
+}
+.main-body {
+  overflow: scroll;
+  grid-area: mainBody;
+}
