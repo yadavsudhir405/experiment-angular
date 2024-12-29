@@ -7,6 +7,8 @@
 @tailwind utilities;
 
 
+$surface-color: #383c4f;
+
 html {
   color-scheme: dark light;
 
@@ -20,20 +22,18 @@ html {
   *****************************************************************************************************
   */
 
-  @include mat.theme-overrides((
-  color: (
-    primary: #dd2247
-  )
-  ));
-
+  @media (prefers-color-scheme: dark) {
+    @include mat.theme-overrides((
+      "surface": $surface-color,
+    ))
+  }
 
   /* *****************************************************************************************************
                      Component specific overrides
   ***************************************************************************************************** */
 
   @include mat.card-overrides((
-    elevated-container-color: var(--mat-sys-surface-container-low),
-    outlined-outline-color: var(--mat-sys-outline-variant),
+    elevated-container-color: var(--mat-sys-background),
   ));
 
 }

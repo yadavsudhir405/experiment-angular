@@ -4,11 +4,12 @@ import {CardInput} from './type';
 import {CommonModule} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 import {Router} from '@angular/router';
+import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   imports: [
-    MatCard, CommonModule, MatCardHeader, MatCardContent, MatCardActions, MatIcon
+    MatCard, CommonModule, MatCardHeader, MatCardContent, MatCardActions, MatIcon, MatButton
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
