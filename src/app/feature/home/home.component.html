@@ -1,9 +1,9 @@
 <mat-card class="min-h-20 max-h-90  min-w-20 max-w-60 overflow-auto gap-4"  *ngFor="let item of cardItems">
- <mat-card-header class="border-b-2 border-gray-100">
-  <h3 class="text-2xl">{{item.title}}</h3>
+ <mat-card-header>
+  <span class="text-2xl">{{item.title}}</span>
  </mat-card-header>
   <mat-card-content>
-    <p>{{item.description}}</p>
+    <span>{{item.description}}</span>
   </mat-card-content>
   <mat-card-actions align="end">
     <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="navigateTo(item.link)">

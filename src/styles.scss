@@ -7,10 +7,40 @@
 @tailwind utilities;
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  color-scheme: dark light;
 
-@include mat.card-overrides((
-   elevated-container-color: #ffffff,
+  @include mat.theme((
+    color: mat.$magenta-palette,
+    density: 0
+  ));
+
+  /* *****************************************************************************************************
+                     Theme overrides
+  *****************************************************************************************************
+  */
+
+  @include mat.theme-overrides((
+  color: (
+    primary: #dd2247
+  )
+  ));
+
+
+  /* *****************************************************************************************************
+                     Component specific overrides
+  ***************************************************************************************************** */
+
+  @include mat.card-overrides((
+    elevated-container-color: var(--mat-sys-surface-container-low),
+    outlined-outline-color: var(--mat-sys-outline-variant),
+  ));
+
+}
+
+@include mat.toolbar-overrides((
+  container-background-color: var(--mat-sys-primary),
+  container-text-color: var(--mat-sys-on-primary),
 ));
+
 
