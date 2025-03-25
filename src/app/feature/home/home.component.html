@@ -1,4 +1,4 @@
-<mat-card class="min-h-20 max-h-90  min-w-20 max-w-60 overflow-auto gap-4"  *ngFor="let item of cardItems">
+<mat-card appearance="raised" class="min-h-20 max-h-90  min-w-20 max-w-60 overflow-auto gap-4"  *ngFor="let item of cardItems">
  <mat-card-header>
   <span class="text-2xl">{{item.title}}</span>
  </mat-card-header>
@@ -6,7 +6,7 @@
     <span>{{item.description}}</span>
   </mat-card-content>
   <mat-card-actions align="end">
-    <button mat-raised-button (click)="navigateTo(item.link)">
+    <button mat-flat-button (click)="navigateTo(item.link)">
       Let's Go
     </button>
   </mat-card-actions>

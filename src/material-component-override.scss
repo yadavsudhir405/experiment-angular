@@ -1,1 +1,12 @@
 @use '@angular/material' as mat;
+
+.orange-theme, .orange-theme, .green-theme {
+  /*
+  Global overrides for card component
+   */
+  @include mat.card-overrides((
+    elevated-container-shape: 8px,
+    elevated-container-color: var(--mat-sys-surface-container),
+    elevated-container-elevation: var(--mat-sys-level3),
+  ))
+}
