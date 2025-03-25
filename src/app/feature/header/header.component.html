@@ -1,3 +1,14 @@
  <mat-toolbar class="h-14">
-   <span>My Application</span>
+   <a class="grow" [routerLink]="'/'" >My Application</a>
+   <button mat-icon-button [matMenuTriggerFor]="menu">
+       <mat-icon>format_color_fill</mat-icon>
+   </button>
+     <mat-menu #menu="matMenu">
+       <ng-container *ngFor="let theme of themes">
+         <button mat-menu-item (click)="onMenuItemClick(theme)">
+           <mat-icon>{{theme.icon}}</mat-icon>
+           <span>{{theme.label}}</span>
+         </button>
+       </ng-container>
+     </mat-menu>
  </mat-toolbar>

@@ -1,0 +1,18 @@
+@use '@angular/material' as mat;
+
+$surface-color: light-dark(#ffffff,#383c4f);
+
+
+/* *****************************************************************************************************
+                   Component specific overrides
+***************************************************************************************************** */
+
+@include mat.card-overrides((
+  elevated-container-color: var(--mat-sys-background),
+));
+
+
+@include mat.toolbar-overrides((
+  container-background-color: var(--mat-sys-primary-container),
+  container-text-color: var(--mat-sys-on-primary-container),
+));

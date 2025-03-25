@@ -2,14 +2,13 @@ import {Component, inject} from '@angular/core';
 import {MatCard, MatCardActions, MatCardContent, MatCardHeader} from '@angular/material/card';
 import {CardInput} from './type';
 import {CommonModule} from '@angular/common';
-import {MatIcon} from '@angular/material/icon';
 import {Router} from '@angular/router';
 import {MatButton} from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   imports: [
-    MatCard, CommonModule, MatCardHeader, MatCardContent, MatCardActions, MatIcon, MatButton
+    MatCard, CommonModule, MatCardHeader, MatCardContent, MatCardActions, MatButton
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
