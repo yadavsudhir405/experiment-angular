@@ -1,6 +1,19 @@
 @use '@angular/material' as mat;
 
+
+.color-preview {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
 :host {
+
+  .menu-item-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 
   /*
      Local overrides for the toolbar component

@@ -6,8 +6,11 @@
      <mat-menu #menu="matMenu">
        <ng-container *ngFor="let theme of themes">
          <button mat-menu-item (click)="onMenuItemClick(theme)">
-           <mat-icon>{{theme.icon}}</mat-icon>
-           <span>{{theme.label}}</span>
+           <div class="flex items-center gap-2">
+             <div class="h-6 w-6 rounded-full" [style.background-color]="theme.primaryColor"></div>
+             <span>{{theme.label}}</span>
+           </div>
+
          </button>
        </ng-container>
      </mat-menu>

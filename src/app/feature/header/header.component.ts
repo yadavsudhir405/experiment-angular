@@ -17,6 +17,7 @@ export type ThemeDetail = {
   label: string;
   icon: string;
   class:string;
+  primaryColor: string;
 }
 
 @Component({
@@ -34,9 +35,9 @@ export type ThemeDetail = {
 })
 export class HeaderComponent implements OnInit {
   themes: ThemeDetail[] = [
-    {type: Theme.light, label: 'Orange', icon: 'light_mode', class:'orange-theme'},
-    {type: Theme.dark, label: 'Green', icon: 'dark_mode', class: 'green-theme'},
-    {type: Theme.system, label: 'Deep Brown', icon: 'desktop_windows', class: 'deep-brown-theme'}
+    {type: Theme.light, label: 'Orange', icon: 'light_mode', primaryColor: '#9a4600', class:'orange-theme'},
+    {type: Theme.dark, label: 'Green', icon: 'dark_mode', primaryColor: '#006b5e', class: 'green-theme'},
+    {type: Theme.system, label: 'Deep Brown', icon: 'desktop_windows', primaryColor: '#ffaed8', class: 'deep-brown-theme'}
   ];
   selectedTheme!: ThemeDetail;
 
