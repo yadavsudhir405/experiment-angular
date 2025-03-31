@@ -3,3 +3,7 @@
 @use "app/themes/greentheme.css";
 @use "app/themes/deepbrowntheme.css";
 @use "./material-component-override";
+
+body {
+  font-family: Inter, sans-serif, "Halvetica Neue", sans-serif;
+}
