@@ -8,5 +8,14 @@
     elevated-container-shape: 8px,
     elevated-container-color: var(--mat-sys-surface-container),
     elevated-container-elevation: var(--mat-sys-level3),
+  ));
+}
+
+html {
+  @include mat.theme((
+    typography: (
+      plain-family: 'Inter, sans-serif',
+    )
   ))
 }
+
