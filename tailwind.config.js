@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{html, ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "sys-background": "var(--mat-sys-background)",
+        "sys-on-background": "var(--mat-sys-on-background)",
+        "sys-primary": "var(--mat-sys-primary)",
+        "sys-on-primary": "var(--mat-sys-on-primary)",
+      }
+    },
   },
   plugins: [],
 }

@@ -22,6 +22,11 @@ export class HomeComponent {
       title: 'Party Form',
       description: 'Demonstrates use of Typed Reactive Forms ',
       link: '/party-form'
+    },
+    {
+      title: 'Tailwind css',
+      description: 'Demonstrates use of Tailwind CSS',
+      link: '/tailwind-css'
     }
   ];
 
