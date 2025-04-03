@@ -4,13 +4,13 @@
        <mat-icon>format_color_fill</mat-icon>
    </button>
      <mat-menu #menu="matMenu">
-       <ng-container *ngFor="let theme of themes">
+       @for (theme of themes; track theme) {
          <button mat-menu-item (click)="onMenuItemClick(theme)">
            <div class="flex items-center gap-2">
              <div class="h-6 w-6 rounded-full" [style.background-color]="theme.primaryColor"></div>
              <span>{{theme.label}}</span>
            </div>
          </button>
-       </ng-container>
+       }
      </mat-menu>
  </mat-toolbar>

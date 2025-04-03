@@ -9,6 +9,10 @@
     elevated-container-color: var(--mat-sys-surface-container),
     elevated-container-elevation: var(--mat-sys-level3),
   ));
+
+ & .mat-divider {
+      margin: 1rem 0!important;
+  }
 }
 
 html {
