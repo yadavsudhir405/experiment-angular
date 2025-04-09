@@ -27,7 +27,13 @@ export class HomeComponent {
       title: 'Tailwind css',
       description: 'Demonstrates use of Tailwind CSS',
       link: '/tailwind-css'
-    }
+    },
+    {
+      title: 'Content Projection',
+      description: 'Demonstrates techniques for content projection',
+      link: '/content-projection'
+    },
+
   ];
 
   navigateTo(link: string) {

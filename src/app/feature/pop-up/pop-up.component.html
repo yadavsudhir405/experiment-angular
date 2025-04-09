@@ -1,0 +1,25 @@
+<dialog #dialog>
+
+    <section class="header bg-sys-primary flex items-center p-4">
+      <div class="text-xl grow">
+        <span class="text-sys-on-primary">{{title}}</span>
+      </div>
+      <button mat-icon-button (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </section>
+
+  <!-- <Using Attribute seletor -->
+    <!--
+    <section class="body">
+      <ng-content select="[body]"></ng-content>
+    </section>
+
+    <section class="footer p-4">
+     <ng-content select="[footer]"></ng-content>
+    </section>
+    -->
+    <ng-content select="[id='body']"></ng-content>
+    <ng-content select="[id='footer']"></ng-content>
+
+</dialog>

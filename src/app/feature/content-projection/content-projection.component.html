@@ -1,0 +1,29 @@
+<button mat-flat-button (click)="openPopup()" >
+  Open Pop Up
+</button>
+
+<app-pop-up [showPopup]="showPopup"
+            [title]="'I am the Header'"
+            (onClose)="hidePopup($event)">
+
+ <!-- Using Attribute selector
+  <div body>
+    I am body content I am body content I am body content I am body content
+  </div>
+
+  <div class="flex justify-between" footer>
+    <button mat-flat-button>Save</button>
+    <button mat-flat-button>Cancel</button>
+  </div>
+-->
+
+
+  <!-- Using Id selector -->
+  <div class="flex justify-between flex" id="footer">
+    <button mat-button class="grow">Save</button>
+    <button mat-button class="grow">Cancel</button>
+  </div>
+  <div id="body" class="p-4">
+    I am body content I am body content I am body content I am body content
+  </div>
+</app-pop-up>
