@@ -1,12 +1,14 @@
-import {Directive, Input} from '@angular/core';
+import {Directive, Input, TemplateRef} from '@angular/core';
 
 @Directive({
   selector: '[appTabItem]'
 })
 export class TabItemDirective {
 
-  @Input('name') name!: string;
+  @Input('appTabItem') name!: string;
 
-  constructor() { }
+  @Input('appTabItemDefaultSelected') defaultSelected: boolean = false;
+
+  constructor(public template: TemplateRef<any>) { }
 
 }

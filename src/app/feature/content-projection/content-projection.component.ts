@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {PopUpComponent} from '../pop-up/pop-up.component';
 import {MatButton} from '@angular/material/button';
 import {MatDivider} from '@angular/material/divider';
@@ -12,7 +12,7 @@ import {TabItemDirective} from '../tab-item/tab-item.directive';
     MatButton,
     MatDivider,
     TabsComponent,
-    TabItemDirective
+    TabItemDirective,
   ],
   templateUrl: './content-projection.component.html',
   styleUrl: './content-projection.component.scss'

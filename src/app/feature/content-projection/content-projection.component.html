@@ -30,9 +30,9 @@
 
 <mat-divider>
 </mat-divider>
-<app-tabs [selectedTab]="selectedTab">
-  <ng-template #selectedTab appTabItem [name]="'Tab1'">I am Tab1</ng-template>
-  <ng-template appTabItem [name]="'Tab2'">I am Tab2</ng-template>
-  <ng-template appTabItem [name]="'Tab3'">I am Tab3</ng-template>
-  <ng-template appTabItem [name]="'Tab4'">I am Tab4</ng-template>
+<app-tabs>
+  <div *appTabItem="'Tab1'; defaultSelected: true ">I am Tab1</div>
+  <div *appTabItem="'Tab2'">I am Tab2</div>
+  <div *appTabItem="'Tab3'">I am Tab3</div>
+  <div *appTabItem="'Tab4'">I am Tab4</div>
 </app-tabs>
