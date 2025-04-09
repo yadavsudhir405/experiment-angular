@@ -27,3 +27,11 @@
     I am body content I am body content I am body content I am body content
   </div>
 </app-pop-up>
+
+<mat-divider>
+</mat-divider>
+<app-tabs [tabs]="['Tab1', 'Tab2', 'Tab3']" [selectedTab]="selectedTab">
+  <ng-template #selectedTab appTabItem>I am Tab1</ng-template>
+  <ng-template appTabItem>I am Tab2</ng-template>
+  <ng-template appTabItem>I am Tab3</ng-template>
+</app-tabs>

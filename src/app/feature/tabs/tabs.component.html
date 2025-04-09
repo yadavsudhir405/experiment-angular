@@ -1,0 +1,6 @@
+@for (tab of tabs; track $index) {
+ <button mat-button (click)="selectTab($index)">{{tab}}</button>
+}
+<div>
+  <ng-container *ngTemplateOutlet="selectedTab"></ng-container>
+</div>

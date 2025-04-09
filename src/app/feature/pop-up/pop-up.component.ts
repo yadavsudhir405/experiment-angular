@@ -1,12 +1,12 @@
 import {Component, ElementRef, EventEmitter, Input, OnChanges, Output, SimpleChanges, ViewChild} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {MatIcon} from '@angular/material/icon';
+import {MatIcon, MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-pop-up',
   imports: [
     CommonModule,
-    MatIcon,
+    MatIconModule,
   ],
   templateUrl: './pop-up.component.html',
   styleUrl: './pop-up.component.scss',
