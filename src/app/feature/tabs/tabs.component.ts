@@ -22,8 +22,9 @@ import {TabItemDirective} from '../tab-item/tab-item.directive';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TabsComponent {
-  @Input() tabs!: string[];
   @Input() selectedTab!: TemplateRef<any>;
+
+  @ContentChildren(TabItemDirective, {read: TabItemDirective}) tabs!: TabItemDirective[];
 
   @ContentChildren(TabItemDirective, {read: TemplateRef<any>}) tabList!: QueryList<TemplateRef<any>>;
 
