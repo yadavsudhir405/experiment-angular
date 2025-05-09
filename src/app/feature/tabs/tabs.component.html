@@ -1,6 +1,7 @@
+@let showGreeting = 'Content From Tab Component';
 @for (tab of tabs; track $index) {
  <button mat-button (click)="selectTab($index)">{{tab.name}}</button>
 }
 <div *ngIf="selectedTab()">
-  <ng-container *ngTemplateOutlet="selectedTab()"></ng-container>
+  <ng-container *ngTemplateOutlet="selectedTab(); context: {data: showGreeting}"></ng-container>
 </div>

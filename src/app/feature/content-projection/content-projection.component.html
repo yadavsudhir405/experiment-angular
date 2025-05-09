@@ -31,7 +31,7 @@
 <mat-divider>
 </mat-divider>
 <app-tabs>
-  <div *appTabItem="'Tab1'; defaultSelected: true ">I am Tab1</div>
+  <div *appTabItem="'Tab1'; defaultSelected: true ; data as data">I am Tab1 {{data}}</div>
   <div *appTabItem="'Tab2'">I am Tab2</div>
   <div *appTabItem="'Tab3'">I am Tab3</div>
   <div *appTabItem="'Tab4'">I am Tab4</div>
