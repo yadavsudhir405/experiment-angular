@@ -1,9 +1,11 @@
 name: Build and Deploy Angular to S3
 
 on:
-  push:
+  pull_request:
     branches:
-      - main  # or your deployment branch
+      - main
+    types:
+      - closed
 
 jobs:
   build-and-deploy:
