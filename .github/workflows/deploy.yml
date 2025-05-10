@@ -33,7 +33,7 @@ jobs:
         with:
           args: --overwrite --remove
         env:
-          MIRROR_TARGET: www.yadavsudhir.com
+          MIRROR_TARGET: yadavsudhir.com
           ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ap-south-1
